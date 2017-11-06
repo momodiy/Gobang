@@ -21,7 +21,7 @@ body{
 	cursor: pointer;
 	box-shadow: 5px 5px 5px turquoise;
 }
-#showval{
+#showMessage{
 	width: 300px;
 	height: 50px;
 	background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
@@ -34,17 +34,6 @@ body{
 	margin: auto;
 	line-height: 50px;
 	border-radius: 5px;
-}
-#overval{
-	position: absolute;
-	width: 300px;
-	height: 200px;
-	left: 30%;
-	top: 45%;
-	text-align: center;
-	margin: auto;
-	display: none;
-	z-index: 700;
 }
 #uc>img{
 	margin: auto;
