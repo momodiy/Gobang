@@ -1,5 +1,14 @@
-## fivePointGame
-- you can play gobang with computer
-- this project without use any framework or plugins
-- the most important array is "scoreStatisticArray", you can change it to make program more intelligent
-- upload two installer package,the .ipd file is for iphone or iPad,the .apk file is for android
+# 人机对战五子棋
+## 背景介绍
+我的第一款小游戏，使用原生js+canvas开发，请多包涵。
+
+## 项目介绍
+- 顾名思义，这是一个可以进行人机对战的五子棋小游戏，玩家持黑子与计算机对。
+- 后期加入了胜率计算、对战局数统计等功能。
+- installerPackage文件夹下是安卓与ios两种手机安装软件，可以直接下载安装体验
+
+## License
+
+MIT License
+
+Copyright (c) 2018 Steven Lee
