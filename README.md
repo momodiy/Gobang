@@ -7,6 +7,10 @@
 - 后期加入了胜率计算、对战局数统计等功能。
 - installerPackage文件夹下是安卓与ios两种手机安装软件，可以直接下载安装体验。
 
+## 在线演示地址
+1. [github page](https://momodiy.github.io/demo/gobang/)
+2. [gitee page](https://geeksteven.gitee.io/momodiy.github.io/demo/gobang/)
+
 ## License
 
 MIT License
