@@ -12,10 +12,13 @@ let me = true,
   winner = null,
   chessBoard = [],
   computerWin = [],
+  logo = new Image(),
   gameCount = $('gameCount').innerText = localStorage.count || 0,
   winNumber = $('winNumber').innerText = localStorage.winNumber || 0;
 
-$('odds').innerText = ~~(winNumber / gameCount * 100) || 100;
+const context = $('chess').getContext('2d');
+
+$('odds').innerText = gameCount ? ~~(winNumber / gameCount * 100) : 100;
 
 const scoreStatisticArray = {
   defind: [200, 450, 2000, 10000],
@@ -82,10 +85,8 @@ for (let i = 0; i < count; i++) {
   computerWin[i] = 0;
 }
 
-const context = $('chess').getContext('2d');
 context.strokeStyle = "#BFBFBF";
 //加水印
-let logo = new Image();
 logo.src = 'img/background.jpg';
 logo.onload = () => {
   context.drawImage(logo, 0, 0, 450, 450);
@@ -222,11 +223,12 @@ const computerAI = () => {
       computerWin[k]++;
       myWin[k] = 6;
       if (computerWin[k] === 5) {
-        alert('你输了');
-        //游戏结束开关
-        over = true;
-        winner = false;
-        gameOver();
+        setTimeout(() => {
+          alert('你输了');
+          over = true; //游戏结束开关
+          winner = false;
+          gameOver();
+        }, 100)
       }
     }
   }
